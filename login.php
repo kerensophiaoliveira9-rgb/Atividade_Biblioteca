@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <h1>Biblioteca</h1>
-        <p class="subtitulo">Facça login para acessar o sistema.</p>
+        <p class="subtitulo">Faça login para acessar o sistema.</p>
 
         <?php
         if (isset($_GET['erro']) && $_Get['erro'] === 'login') {
