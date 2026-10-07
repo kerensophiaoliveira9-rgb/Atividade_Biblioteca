@@ -40,7 +40,7 @@ if (mysqli_num_rows($resultadoVeificar) > 0) {
 // password_hash() gera um hash seguro da senha 
 // PASSWORD_DEFAULT usa um algoritmo bcrypt (padrão PHP)
 
-$sngaCriptografada = password_hash($senha, PASSWORD_DEFAULT);
+$senhaCriptografada = password_hash($senha, PASSWORD_DEFAULT);
 
 // ==========================================================
 // INSERÇÃO NO BANCO (CREATE DO CRUD)
