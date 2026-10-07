@@ -26,7 +26,7 @@ include ("verificar_sessao.php");
                     Cadastrar Livro
                 </a>
                 <a href="listar_livro.php" class="card-link">
-                    Cadastrar Livros
+                    Listar Livro
                 </a>
                 <a href="logout.php" class="card-link">
                     Sair
