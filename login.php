@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,7 @@
         <p class="subtitulo">Faça login para acessar o sistema.</p>
 
         <?php
-        if (isset($_GET['erro']) && $_Get['erro'] === 'login') {
+        if (isset($_GET['erro']) && $_GET['erro'] === 'login') {
             echo '<div class="mensagem-erro">Login inválido.
             Verifique email e senha.</div>';
         }
@@ -21,13 +22,11 @@
         <form action="autenticar.php" method="POST">
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" 
-                placeholder="Digite seu email" required>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
             </div>
             <div class="form-group">
                 <label for="senha">Senha</label>
-                <input type="password" id="senha" name="senha" 
-                placeholder="Digite sua senha" required>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
             </div>
             <button type="submit" class="btn btn-block">Entrar</button>
         </form>
@@ -40,6 +39,7 @@
             <strong>FLuxo:</strong> Login → Painel → Cadastrar ou Listar Livros
         </div>
     </div>
-    
+
 </body>
+
 </html>
