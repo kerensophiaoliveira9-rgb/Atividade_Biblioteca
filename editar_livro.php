@@ -37,15 +37,15 @@ $livro = mysqli_fetch_assoc($resultado);
 <body>
     <div class="container">
         <h1>Editar Livro</h1>
-        <p class="subtítulo">
+        <p class="subtitulo">
             Altere os dados do livro e clique em Atualizar.
         </p>
 
         <!-- Formulário envia os dados para atualizar_livro.php -->
         <form action="atualizar_livro.php" method="POST">
             <!-- Campo hidden guarda o ID sem aparecer na tela -->
-            <input type="hidden" name="id">
-            value="<?php echo $livro['id']; ?>"
+            <input type="hidden" name="id"
+            value="<?php echo $livro['id']; ?>">
 
             <div class="form-group">
                 <label for="titulo">Título</label>
@@ -59,21 +59,22 @@ $livro = mysqli_fetch_assoc($resultado);
                 <label for="status">Status</label>
                 <select name="status" id="status" required>
                     <!-- Marcar como select a opção que corresponde ao status atual -->
-                     <option value="Disponível" <?php if 
-                     ($livro['status'] === 'Disponível') echo 'selected'; ?>>
-                     Disponível</option>
-                     <option value="Emprestado" <?php if
-                     ($livro['status'] === 'Emprestado') echo 'selected'; ?>>
-                     Emprestado</option>
+                    <option value="Disponível" <?php if
+                    ($livro['status'] === 'Disponível')
+                        echo 'selected'; ?>>
+                        Disponível</option>
+                    <option value="Emprestado" <?php if
+                    ($livro['status'] === 'Emprestado')
+                        echo 'selected'; ?>>
+                        Emprestado</option>
                 </select>
             </div>
-            <button type="submit" class="btn btn-block"
-            >Atualizar Livro</button>
+            <button type="submit" class="btn btn-block">Atualizar Livro</button>
         </form>
         <!-- Botão de voltar para listagem de livros -->
-         <a href="listar_livro.php" class="btn btn-voltar">
+        <a href="listar_livro.php" class="btn btn-voltar">
             Voltar para a Listagem
-         </a>
+        </a>
     </div>
 
 </body>
